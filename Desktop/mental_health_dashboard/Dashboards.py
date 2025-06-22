@@ -11,8 +11,9 @@ st.title("🧠 Mental Health & Lifestyle Dashboard")
 
 # === LOAD DATA ===
 def load_data():
-    dataset_1 = "Mental_Health_Lifestyle_Dataset.csv"
-    dataset_2 = "healthy_lifestyle_city_2021.csv"
+    dataset_1 = "mental_health_dashboard/Mental_Health_Lifestyle_Dataset.csv"
+    dataset_2 = "mental_health_dashboard/healthy_lifestyle_city_2021.csv"
+
 
     if not os.path.isfile(dataset_1):
         st.error(f"File not found: {dataset_1}. Please ensure it's in the working directory.")
