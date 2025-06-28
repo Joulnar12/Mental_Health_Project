@@ -1,8 +1,6 @@
 streamlit
 pandas
-matplotlib
-seaborn
 plotly
 scikit-learn
 statsmodels
-# rebuild trigger
+scipy
