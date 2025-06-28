@@ -137,12 +137,12 @@ with colB3:
     env_df['bottle_water_cost'] = pd.to_numeric(env_df['cost_of_a_bottle_of_watercity'].str.replace('£', ''), errors='coerce')
     bottle_happy = env_df.dropna(subset=["bottle_water_cost", "happiness"])
     fig = px.scatter(
-        bottle_happy,
-        x="bottle_water_cost",
-        y="happiness",
-        color="bottle_water_cost",
-        color_continuous_scale=px.colors.sequential.Turbo,
-        trendline="ols",
-        title="Bottle Water Cost vs Happiness"
-    )
+    bottle_happy,
+    x="bottle_water_cost",
+    y="happiness",
+    color="bottle_water_cost",
+    color_continuous_scale=px.colors.sequential.Turbo,
+    title="Bottle Water Cost vs Happiness"
+)
+
     st.plotly_chart(fig, use_container_width=True, height=300)
