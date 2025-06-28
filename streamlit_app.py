@@ -5,8 +5,8 @@ import plotly.graph_objects as go
 from sklearn.preprocessing import MinMaxScaler
 
 # === LOAD CLEANED DATA ===
-df = pd.read_csv("/Users/joulnarabouchakra/Desktop/Mental_Health_Project/Mental_Health_Lifestyle_Dataset.csv")
-env_df = pd.read_csv("/Users/joulnarabouchakra/Desktop/Mental_Health_Project/healthy_lifestyle_city_2021.csv")
+df = pd.read_csv("Mental_Health_Lifestyle_Dataset.csv")
+env_df = pd.read_csv("healthy_lifestyle_city_2021.csv")
 
 # === CLEANING & TRANSFORMATIONS ===
 df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_").str.replace(r'[()/%]', '', regex=True)
