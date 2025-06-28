@@ -116,8 +116,7 @@ st.markdown("<h2>🌍 Section B — Environmental Insights</h2>", unsafe_allow_h
 colB1, colB2, colB3 = st.columns(3)
 with colB1:
     pollution_happiness = env_df.dropna(subset=["pollution_index", "happiness"])
-    fig = px.scatter(pollution_happiness, x="pollution_index", y="happiness", color="pollution_index",
-                     trendline="ols", title="Pollution Index vs Happiness")
+    fig = px.scatter(pollution_happiness, x="pollution_index", y="happiness", color="pollution_index",title="Pollution Index vs Happiness")
     st.plotly_chart(fig, use_container_width=True, height=300)
 with colB2:
     categories = ["sleep_hours", "work_hours_per_week", "screen_time_per_day_hours", "social_interaction_score", "stress_score"]
