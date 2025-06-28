@@ -63,8 +63,8 @@ plt.title("Pollution Index vs. Happiness")
 plt.tight_layout()
 plt.show()
 
-sns.scatterplot(data=df, x='gym_cost', y='obesity_rate')
-plt.title("Gym Cost vs. Obesity Rate")
+sns.scatterplot(data=df, x='gym_cost', y='happiness')
+plt.title("Gym Membership Cost vs. Happiness")
 plt.tight_layout()
 plt.show()
 
